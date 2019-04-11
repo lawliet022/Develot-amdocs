@@ -303,18 +303,13 @@ emoji.funny{background-image: url(https://i.imgur.com/qKia58V.png);}
 
 /* T Y P E */
 
-input.textarea {
-    position: fixed;
-    bottom: 0px;
-    left: 305px;
-    right: 0px;
+textarea {
+    padding: 10px;
     z-index: 99;
     background-color: #fafafa;
     border: none;
     border-radius: 15px;
     outline: none;
-    padding-left: 55px;
-    padding-right: 55px;
     color: #666;
     font-weight: 400;
 }

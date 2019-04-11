@@ -5875,9 +5875,7 @@ label {
 input:not([type]),input[type=text]:not(.browser-default),input[type=password]:not(.browser-default),input[type=email]:not(.browser-default),input[type=url]:not(.browser-default),input[type=time]:not(.browser-default),input[type=date]:not(.browser-default),input[type=datetime]:not(.browser-default),input[type=datetime-local]:not(.browser-default),input[type=tel]:not(.browser-default),input[type=number]:not(.browser-default),input[type=search]:not(.browser-default),textarea.materialize-textarea {
     outline: none;
     height: 3rem;
-    width: 880px;
     font-size: 1rem;
-    margin: 0 0 10px 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-box-sizing: content-box;
@@ -5906,7 +5904,6 @@ input:not([type]):focus:not([readonly])+label,input[type=text]:not(.browser-defa
 }
 
 input:not([type]).validate+label,input[type=text]:not(.browser-default).validate+label,input[type=password]:not(.browser-default).validate+label,input[type=email]:not(.browser-default).validate+label,input[type=url]:not(.browser-default).validate+label,input[type=time]:not(.browser-default).validate+label,input[type=date]:not(.browser-default).validate+label,input[type=datetime]:not(.browser-default).validate+label,input[type=datetime-local]:not(.browser-default).validate+label,input[type=tel]:not(.browser-default).validate+label,input[type=number]:not(.browser-default).validate+label,input[type=search]:not(.browser-default).validate+label,textarea.materialize-textarea.validate+label {
-    width: 100%
 }
 
 input:not([type]).invalid+label:after,input:not([type]).valid+label:after,input[type=text]:not(.browser-default).invalid+label:after,input[type=text]:not(.browser-default).valid+label:after,input[type=password]:not(.browser-default).invalid+label:after,input[type=password]:not(.browser-default).valid+label:after,input[type=email]:not(.browser-default).invalid+label:after,input[type=email]:not(.browser-default).valid+label:after,input[type=url]:not(.browser-default).invalid+label:after,input[type=url]:not(.browser-default).valid+label:after,input[type=time]:not(.browser-default).invalid+label:after,input[type=time]:not(.browser-default).valid+label:after,input[type=date]:not(.browser-default).invalid+label:after,input[type=date]:not(.browser-default).valid+label:after,input[type=datetime]:not(.browser-default).invalid+label:after,input[type=datetime]:not(.browser-default).valid+label:after,input[type=datetime-local]:not(.browser-default).invalid+label:after,input[type=datetime-local]:not(.browser-default).valid+label:after,input[type=tel]:not(.browser-default).invalid+label:after,input[type=tel]:not(.browser-default).valid+label:after,input[type=number]:not(.browser-default).invalid+label:after,input[type=number]:not(.browser-default).valid+label:after,input[type=search]:not(.browser-default).invalid+label:after,input[type=search]:not(.browser-default).valid+label:after,textarea.materialize-textarea.invalid+label:after,textarea.materialize-textarea.valid+label:after {
@@ -6019,9 +6016,6 @@ input:not([type])+label:after,input[type=text]:not(.browser-default)+label:after
 }
 
 .input-field .prefix ~ input,.input-field .prefix ~ textarea,.input-field .prefix ~ label,.input-field .prefix ~ .validate ~ label,.input-field .prefix ~ .autocomplete-content {
-    margin-left: 3rem;
-    width: 92%;
-    width: calc(100% - 3rem)
 }
 
 .input-field .prefix ~ label {
@@ -6084,7 +6078,6 @@ input:not([type])+label:after,input[type=text]:not(.browser-default)+label:after
 }
 
 textarea {
-    width: 100%;
     height: 3rem;
     background-color: transparent
 }
