@@ -4,7 +4,9 @@
 html, body {
     background: #e5e5e5;
     font-family: 'Lato', sans-serif;
-    margin: 0px auto;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 ::selection{
   background: rgba(82,179,217,0.3);
@@ -83,14 +85,11 @@ a{
 /* M E S S A G E S */
 
 .chat {
-    bottom: 100px;
+    /*border:2px solid black;*/
     list-style: none;
-    background: none;
-    margin: 0;
-    padding: 0 64px 0px 300px;
-    margin-top: 128px;
-    margin-bottom: 200px;
-    padding-bottom: 100px;
+    margin: 128px 0 200px 300px;
+    overflow: auto;
+    height: 420px;
 }
 .chat li {
     padding: 0.5rem;
