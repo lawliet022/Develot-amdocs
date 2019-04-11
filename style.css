@@ -6,6 +6,7 @@ html, body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
+    height: 100%;
     overflow: hidden;
 }
 ::selection{
@@ -89,7 +90,7 @@ a{
     list-style: none;
     margin: 128px 0 200px 300px;
     overflow: auto;
-    height: 420px;
+    height: calc(100% - 128px - 65px);
 }
 .chat li {
     padding: 0.5rem;
