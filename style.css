@@ -7,6 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     overflow: hidden;
 }
 ::selection{
@@ -307,11 +308,10 @@ input.textarea {
     bottom: 0px;
     left: 305px;
     right: 0px;
-    width: 100%;
-    height: 50px;
     z-index: 99;
-    background: #fafafa;
+    background-color: #fafafa;
     border: none;
+    border-radius: 15px;
     outline: none;
     padding-left: 55px;
     padding-right: 55px;
