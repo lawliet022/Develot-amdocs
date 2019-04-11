@@ -1,23 +1,28 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
-.brand-logo{
-	padding-left: 30px;
-	margin-left: 30px;
+html, body {
+    background: #e5e5e5;
+    font-family: 'Lato', sans-serif;
+    margin: 0px auto;
 }
-/*.nav2{
-	top: 0px;
-	overflow: hidden;
-	position: fixed;
-}*/
+::selection{
+  background: rgba(82,179,217,0.3);
+  color: inherit;
+}
+a{
+  color: rgba(82,179,217,0.9);
+}
+
+/* M E N U */
 
 .menu {
-	/*position: ;*/
-    top: 70px;
-    left: 0px;
+    position: fixed;
+    top: 0px;
+    left: 300px;
     right: 0px;
-    width: 100%;
-    height: 50px;
+    width: 84%;
+    height: 64px;
     background: rgba(82,179,217,0.9);
     z-index: 100;
     -webkit-touch-callout: none;
@@ -26,24 +31,22 @@
     -ms-user-select: none;
 }
 
-
 .back {
+    position: absolute;
     width: 90px;
     height: 50px;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: 0px;
     color: #fff;
     line-height: 50px;
     font-size: 30px;
     padding-left: 10px;
     cursor: pointer;
-    float: left;
 }
 .back img {
-	position: absolute;
-	margin-top: 4px;
-    top: 50px;
-    left: 100px;
+    position: absolute;
+    top: 5px;
+    left: 30px;
     width: 40px;
     height: 40px;
     background-color: rgba(255,255,255,0.98);
@@ -53,21 +56,21 @@
     -ms-border-radius: 100%;
     margin-left: 15px;
     }
-
+.back:active {
+    background: rgba(255,255,255,0.2);
+}
 .name2{
-	height: 100%;
-	width: 100%;
+    position: absolute;
     top: 3px;
-    left: 200px;
+    left: 110px;
     font-family: 'Lato';
     font-size: 25px;
     font-weight: 300;
     color: rgba(255,255,255,0.98);
     cursor: default;
-    margin-top: 5px;
-    padding-top: 7px;
 }
 .last{
+    position: absolute;
     top: 30px;
     left: 115px;
     font-family: 'Lato';
@@ -75,23 +78,19 @@
     font-weight: 400;
     color: rgba(255,255,255,0.6);
     cursor: default;
-    padding-bottom: 5px; 
 }
 
-
-
+/* M E S S A G E S */
 
 .chat {
-	position: relative;
-	height: 750px;
-	width: 100%;
+    bottom: 100px;
     list-style: none;
     background: none;
     margin: 0;
-    padding: 0 0 50px 0;
-    /*margin-top: 20px;*/
-    /*margin-bottom: 10px;*/
-    background: #D8D8D8;
+    padding: 0 64px 0px 300px;
+    margin-top: 128px;
+    margin-bottom: 200px;
+    padding-bottom: 100px;
 }
 .chat li {
     padding: 0.5rem;
@@ -110,7 +109,7 @@
     -ms-border-radius: 100%;
     background-color: rgba(255,255,255,0.9);
 }
-.chat .avatar img{
+.chat .avatar img {
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -167,36 +166,19 @@
     order: 1;
     border-bottom-right-radius: 0px;
     box-shadow: 1px 2px 0px #D4D4D4;
-    background-color: #dcf8c6;
 }
 .self .avatar {
     order: 2;
 }
-
-/*.self:before{
-	content: "";
-    position: relative;
-    display: inline-block;
-    bottom: 19px;
-    left: 0px;
-    right: 40px;
-    width: 0px;
-    height: 0px;
-    border: 5px solid #fff;
-    border-right-color: transparent;
-    border-top-color: transparent;
-    
-}
-*/
 .self .avatar:after {
     content: "";
     position: relative;
     display: inline-block;
-    bottom: 23px;
+    bottom: 19px;
     right: 0px;
     width: 0px;
     height: 0px;
-    border: 5px solid #dcf8c6;
+    border: 5px solid #fff;
     border-right-color: transparent;
     border-top-color: transparent;
     box-shadow: 0px 2px 0px #D4D4D4;
@@ -210,7 +192,7 @@
     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.07);
 }
 .msg p {
-    font-size: 1.0rem;
+    font-size: 0.8rem;
     margin: 0 0 0.2rem 0;
     color: #777;
 }
@@ -319,25 +301,14 @@ emoji.funny{background-image: url(https://i.imgur.com/qKia58V.png);}
 }
 
 /* T Y P E */
-/*.textarea2{
-	width: 30%;
-	background-color: red: 
-}
-*/
 
-/*.input[type=text] {
-  width: 80%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}*/
-/*.inputtext .textarea2{
+input.textarea {
     position: fixed;
-    bottom: 10px;
-    left: 0px;
+    bottom: 0px;
+    left: 305px;
     right: 0px;
     width: 100%;
-    height: 0px;
+    height: 50px;
     z-index: 99;
     background: #fafafa;
     border: none;
@@ -346,10 +317,8 @@ emoji.funny{background-image: url(https://i.imgur.com/qKia58V.png);}
     padding-right: 55px;
     color: #666;
     font-weight: 400;
-    margin-bottom: 20px;
-    float: left;
-}*/
-/*.emojis {
+}
+.emojis {
     position: fixed;
     display: block;
     bottom: 8px;
@@ -361,7 +330,7 @@ emoji.funny{background-image: url(https://i.imgur.com/qKia58V.png);}
     background-size: cover;
     z-index: 100;
     cursor: pointer;
-}*/
-/*.emojis:active {
+}
+.emojis:active {
     opacity: 0.9;
-}*/
+}
